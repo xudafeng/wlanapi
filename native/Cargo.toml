@@ -7,7 +7,7 @@ build = "build.rs"
 exclude = ["artifacts.json", "index.node"]
 
 [lib]
-name = "test"
+name = "wlanapi"
 crate-type = ["cdylib"]
 
 [build-dependencies]
