@@ -1,0 +1,35 @@
+{
+  "name": "wlanapi",
+  "version": "0.1.0",
+  "description": "wlanapi",
+  "keywords": ["wlanapi"],
+  "bin": {
+    "wlanapi": "./bin/wlanapi.js"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xudafeng/wlanapi.git"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "*",
+    "eslint-plugin-mocha": "^4.11.0",
+    "git-contributor": "*",
+    "husky": "*",
+    "mocha": "*",
+    "nyc": "*"
+  },
+  "scripts": {
+    "test": "nyc --reporter=lcov --reporter=text mocha",
+    "lint": "eslint . --fix",
+    "contributor": "git-contributor"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "license": "MIT"
+}
