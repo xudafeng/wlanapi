@@ -25,8 +25,7 @@
     "nyc": "*"
   },
   "scripts": {
-    "install": "neon build",
-    "build": "neon build",
+    "build": "neon build -r",
     "test": "nyc --reporter=lcov --reporter=text mocha",
     "lint": "eslint . --fix",
     "contributor": "git-contributor"

@@ -4,7 +4,8 @@ native/artifacts.json
 **/*~
 **/node_modules
 **/.DS_Store
+**/coverage
+**/.nyc_output
 Cargo.lock
-node_modules
 npm-debug.log
 Thumbs.db
