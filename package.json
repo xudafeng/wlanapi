@@ -2,16 +2,19 @@
   "name": "wlanapi",
   "version": "0.1.0",
   "description": "wlanapi",
-  "keywords": ["wlanapi"],
+  "keywords": [
+    "wlanapi"
+  ],
   "bin": {
     "wlanapi": "./bin/wlanapi.js"
   },
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/xudafeng/wlanapi.git"
   },
   "dependencies": {
+    "neon-cli": "^0.3.3"
   },
   "devDependencies": {
     "eslint": "*",
@@ -22,6 +25,8 @@
     "nyc": "*"
   },
   "scripts": {
+    "install": "neon build",
+    "build": "neon build",
     "test": "nyc --reporter=lcov --reporter=text mocha",
     "lint": "eslint . --fix",
     "contributor": "git-contributor"
