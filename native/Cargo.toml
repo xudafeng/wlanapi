@@ -1,5 +1,5 @@
 [package]
-name = "test"
+name = "wlanapi"
 version = "0.1.0"
 authors = ["xudafeng <xudafeng@126.com>"]
 license = "MIT"
@@ -15,3 +15,6 @@ neon-build = "0.3.3"
 
 [dependencies]
 neon = "0.3.3"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["wlanapi"] }
